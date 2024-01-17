@@ -7,14 +7,22 @@ fn main() {
     
     let file_name = args[0].clone();
     let file_type: Vec<&str>= file_name.split(".").collect();
+
     // a simple error and input sanitizer
     if file_type.len() > 2 {
         println!("incorrect file type!");
         return
     }
 
-    for i in file_type {
-        println!("file type {}", i);
+    println!("file {:?}", file_type[1]);
+
+    match file_type[1] {
+       "txt" => {
+        println!("This is a txt file")
+       }, 
+       _ => {
+        println!("Unsupported file type")
+       }
     }
-    
+
 }
