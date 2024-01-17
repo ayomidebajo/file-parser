@@ -14,8 +14,6 @@ fn main() {
         return
     }
 
-    println!("file {:?}", file_type[1]);
-
     match file_type[1] {
        "txt" => {
         println!("This is a txt file")
@@ -24,5 +22,7 @@ fn main() {
         println!("Unsupported file type")
        }
     }
+
+    // todo: add path buf and experiment reading a file buffer from a format and write in another format.
 
 }
