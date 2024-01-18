@@ -24,5 +24,6 @@ fn main() {
     }
 
     // todo: add path buf and experiment reading a file buffer from a format and write in another format.
+    // make more research on paths
 
 }
