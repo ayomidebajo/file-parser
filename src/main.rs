@@ -1,5 +1,4 @@
 use clap::Parser;
-use std::env;
 pub mod file_types;
 
 #[derive(Parser, Debug)]
